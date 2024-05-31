@@ -1061,7 +1061,7 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
     <div class="night"></div>
     <div class="text">Due to exam stress, Zai sent you flowers x</div>
     <div class="flowers">
-      <div class="flower" onclick="redirectToVideo()">
+      <div class="flower" id="flower">
         
         <div class="flower flower--1">
             <div class="flower__leafs flower__leafs--1">
@@ -1126,6 +1126,8 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   function redirectToVideo() {
       window.location.href = "https://youtu.be/dQw4w9WgXcQ"; // Replace with your desired YouTube video URL
   }
+  document.getElementById('flower').addEventListener('click', redirectToVideo);
+  document.getElementById('flower').addEventListener('touchend', redirectToVideo);
 </script>
 </body>
 </html>
