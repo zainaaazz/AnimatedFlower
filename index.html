@@ -70,7 +70,7 @@
 .flowers {
   position: relative;
   transform: scale(0.7);
-  margin-bottom: 20vh;
+  
 }
 
 .flower {
@@ -1021,33 +1021,31 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .not-loaded * {
   animation-play-state: paused !important;
 }
-@media (max-width: 768px) {
-          .text {
-            font-size: 3em;
-          }
+
+ /* Media queries for responsiveness */
+ @media (max-width: 768px) {
           .flowers {
-            transform: scale(0.5);
+            transform: scale(0.9);
+            margin-bottom: 50vh; /* Higher position on tablets */
+            
           }
         }
 
         @media (max-width: 480px) {
-          .text {
-            font-size: 2em;
-          }
           .flowers {
-            transform: scale(0.4);
+            transform: scale(1);
+            margin-bottom: 55vh; /* Higher position on small screens */
           }
         }
 
         @media (max-width: 320px) {
-          .text {
-            font-size: 1.5em;
-          }
           .flowers {
-            transform: scale(0.3);
+            transform: scale(1.1);
+            margin-bottom: 50vh; /* Higher position on very small screens */
           }
         }
     </style>
+
 </head>
 <body class="not-loaded">
     <div class="night"></div>
